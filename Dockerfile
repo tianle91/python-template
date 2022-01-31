@@ -1,7 +1,9 @@
 FROM python:3.7
 
-COPY ./requirements.txt ./
-RUN pip install -r requirements.txt
+WORKDIR /workdir
+COPY . ./
 
-COPY ./requirements-dev.txt ./
+RUN pip install -r requirements.txt
 RUN pip install -r requirements-dev.txt
+
+ENTRYPOINT [ "python", "app.py" ]
