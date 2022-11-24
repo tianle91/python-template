@@ -1,6 +1,6 @@
-isort
-ipykernel
-pylint
 autopep8
-pytest
 flake8
+ipykernel
+isort
+pylint
+pytest
