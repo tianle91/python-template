@@ -5,6 +5,7 @@ clean:
 	rm -rf .tox .cache .venv requirements.txt .git/hooks/pre-commit
 
 .venv:
+	poetry env remove --all
 	poetry config virtualenvs.in-project true
 	poetry install
 
