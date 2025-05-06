@@ -16,5 +16,5 @@ readme = "README.md"
 python = "3.13.3" # should match Dockerfile
 
 [tool.poetry.group.dev.dependencies]
-pytest = "*"
+pytest = "^7.3.2"
 pre-commit = "^4.2.0"
