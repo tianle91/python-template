@@ -2,7 +2,7 @@
 
 .PHONY: clean
 clean:
-	rm -rf .tox .cache .venv requirements.txt .git/hooks/pre-commit
+	rm -rf .venv .git/hooks/pre-commit
 
 .venv:
 	poetry env remove --all
