@@ -13,10 +13,8 @@ authors = ["Tianle Chen <tianlechen@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">3.9.7,<4.0" # should match Dockerfile
+python = "3.13.3" # should match Dockerfile
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
-pre-commit = "^3.2.2"
-black = "23.3.0" # should match .pre-commit-config.yaml
-isort = "5.12.0" # should match .pre-commit-config.yaml
+pre-commit = "^4.2.0"
