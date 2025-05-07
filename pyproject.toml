@@ -9,6 +9,7 @@ profile = "black"
 name = "PYTHON TEMPLATE"
 version = "0"
 description = ""
+package-mode = false
 authors = ["Tianle Chen <tianlechen@gmail.com>"]
 readme = "README.md"
 
