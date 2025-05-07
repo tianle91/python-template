@@ -14,5 +14,5 @@ pre-commit: .venv
 	.venv/bin/python -m pre_commit install
 
 .PHONY: tests
-test: pre-commit
+tests: pre-commit
 	.venv/bin/pytest tests
