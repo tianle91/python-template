@@ -13,6 +13,6 @@ clean:
 pre-commit: .venv
 	.venv/bin/python -m pre_commit install
 
-.PHONY: test
+.PHONY: tests
 test: pre-commit
-	tox run
+	.venv/bin/pytest tests
