@@ -2,7 +2,7 @@
 
 .PHONY: clean
 clean:
-	rm -rf .tox .cache .venv requirements.txt .git/hooks/pre-commit
+	rm -rf .venv .git/hooks/pre-commit
 
 .venv:
 	poetry env remove --all
@@ -13,6 +13,6 @@ clean:
 pre-commit: .venv
 	.venv/bin/python -m pre_commit install
 
-.PHONY: test
+.PHONY: tests
 test: pre-commit
-	tox run
+	.venv/bin/pytest tests
